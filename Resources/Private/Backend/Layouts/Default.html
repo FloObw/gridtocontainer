@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:be.container>
+	<div class="typo3-fullDoc gridtocontainer">
+		<div id="typo3-docheader">
+			<div class="typo3-docheader-functions">
+				<div class="left">
+					<f:be.buttons.csh />
+					<f:be.menus.actionMenu>
+						<f:be.menus.actionMenuItem label="{f:translate(key: 'migrate.actionMenu.1')}" controller="" action="list" />
+						<f:be.menus.actionMenuItem label="{f:translate(key: 'migrate.actionMenu.3')}" action="migrategeneral" controller="" />
+						<f:be.menus.actionMenuItem label="{f:translate(key: 'migrate.actionMenu.4')}" action="analyse" controller="" />
+						<f:be.menus.actionMenuItem label="{f:translate(key: 'migrate.actionMenu.2')}" action="overview" controller="" />
+					</f:be.menus.actionMenu>
+				</div>
+			</div>
+
+		</div>
+		<div id="typo3-docbody">
+			<div id="typo3-inner-docbody">
+				<f:flashMessages />
+				<f:render section="content" />
+			</div>
+		</div>
+	</div>
+</f:be.container>
+</html>
